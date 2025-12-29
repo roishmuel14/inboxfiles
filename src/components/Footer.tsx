@@ -51,9 +51,9 @@ export function Footer() {
                 </div>
 
                 <div className="flex gap-8 text-sm font-medium text-slate-500">
-                    <a href="/privacy.html" className="hover:text-google-blue transition-colors">Privacy Policy</a>
+                    <a href="/privacy" className="hover:text-google-blue transition-colors">Privacy Policy</a>
                     <a href="#" className="hover:text-google-blue transition-colors">Terms of Service</a>
-                    <a href="#" className="hover:text-google-blue transition-colors">Contact</a>
+                    <a href="mailto:roishmuel14@gmail.com" className="hover:text-google-blue transition-colors">Contact</a>
                 </div>
 
                 <div className="text-sm text-slate-400">
