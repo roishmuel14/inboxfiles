@@ -31,14 +31,17 @@ export default function HeroSection() {
                         </p>
 
                         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                            <motion.button
+                            <motion.a
+                                href="https://chromewebstore.google.com/detail/gmail-thread-attachment-m/diadbgkjjgaficnklbhakleimefococg?hl=en"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 className="w-full sm:w-auto flex items-center justify-center gap-3 bg-google-blue text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-google-blue/30 hover:bg-primary-hover transition-all"
                             >
                                 <HiDownload className="w-6 h-6" />
                                 Add to Chrome - It&apos;s Free
-                            </motion.button>
+                            </motion.a>
                             <div className="flex items-center gap-2 text-sm text-slate-500 font-medium">
                                 <div className="flex -space-x-2">
                                     {[1, 2, 3].map((i) => (

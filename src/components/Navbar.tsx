@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 export default function Navbar() {
@@ -26,14 +27,14 @@ export default function Navbar() {
             )}
         >
             <div className="max-w-7xl mx-auto flex items-center justify-between">
-                <div className="flex items-center gap-2">
+                <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                     <div className="w-8 h-8 rounded-lg bg-google-blue flex items-center justify-center text-white font-bold">
                         G
                     </div>
                     <span className="font-bold text-xl tracking-tight hidden sm:block">
                         GmailAttachments
                     </span>
-                </div>
+                </Link>
 
                 <div className="hidden md:flex items-center gap-8">
                     <a href="#features" className="text-sm font-medium hover:text-google-blue transition-colors">
@@ -42,24 +43,33 @@ export default function Navbar() {
                     <a href="#how-it-works" className="text-sm font-medium hover:text-google-blue transition-colors">
                         How it Works
                     </a>
-                    <motion.button
+                    <Link href="/blog" className="text-sm font-medium hover:text-google-blue transition-colors">
+                        Blog
+                    </Link>
+                    <motion.a
+                        href="https://chromewebstore.google.com/detail/gmail-thread-attachment-m/diadbgkjjgaficnklbhakleimefococg?hl=en"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="flex items-center gap-2 bg-google-blue text-white px-5 py-2.5 rounded-full font-semibold shadow-lg shadow-google-blue/20 hover:bg-primary-hover transition-colors"
                     >
                         <HiDownload className="w-5 h-5" />
                         Add to Chrome
-                    </motion.button>
+                    </motion.a>
                 </div>
 
                 {/* Mobile menu could be added here, but following the core requirements first */}
                 <div className="md:hidden">
-                    <motion.button
+                    <motion.a
+                        href="https://chromewebstore.google.com/detail/gmail-thread-attachment-m/diadbgkjjgaficnklbhakleimefococg?hl=en"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         whileTap={{ scale: 0.95 }}
                         className="bg-google-blue text-white p-2 rounded-full"
                     >
                         <HiDownload className="w-5 h-5" />
-                    </motion.button>
+                    </motion.a>
                 </div>
             </div>
         </motion.nav>

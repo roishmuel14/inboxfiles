@@ -24,14 +24,17 @@ export function FinalCTA() {
                         <p className="text-xl text-blue-50 mb-12 max-w-2xl mx-auto">
                             Ready to clear the clutter? Install Gmail Attachments Downloader for free today and save hours of frustration.
                         </p>
-                        <motion.button
+                        <motion.a
+                            href="https://chromewebstore.google.com/detail/gmail-thread-attachment-m/diadbgkjjgaficnklbhakleimefococg?hl=en"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="bg-white text-google-blue px-10 py-5 rounded-full font-bold text-xl shadow-xl hover:bg-blue-50 transition-colors inline-flex items-center gap-3"
                         >
                             <HiDownload className="w-6 h-6" />
                             Add to Chrome - It&apos;s Free
-                        </motion.button>
+                        </motion.a>
                     </div>
                 </motion.div>
             </div>
