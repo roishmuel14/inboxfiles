@@ -19,11 +19,11 @@ export default function HeroSection() {
                         transition={{ duration: 0.6 }}
                     >
                         <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
-                            All your email thread files, {" "}
+                            The "View All Attachments" {" "}
                             <span className="text-google-blue underline decoration-google-blue/20 underline-offset-8">
-                                organized
+                                Button
                             </span>{" "}
-                            and ready.
+                            Gmail Forgot.
                         </h1>
                         <p className="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto lg:mx-0">
                             Instantly see and download every attachment buried in long email conversations.

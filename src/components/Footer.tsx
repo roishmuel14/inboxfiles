@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
+import Image from "next/image";
 
 export function FinalCTA() {
     return (
@@ -47,10 +48,14 @@ export function Footer() {
         <footer className="py-12 px-6 border-t border-slate-100 dark:border-slate-800">
             <div className="max-w-7xl mx-auto flex flex-col md:row items-center justify-between gap-8">
                 <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded bg-google-blue flex items-center justify-center text-white text-[10px] font-bold">
-                        G
-                    </div>
-                    <span className="font-bold text-slate-900 dark:text-white">GmailAttachments</span>
+                    <Image
+                        src="/images/logo.png"
+                        alt="InboxFiles Logo"
+                        width={28}
+                        height={28}
+                        className="w-7 h-7"
+                    />
+                    <span className="font-bold text-slate-900 dark:text-white">InboxFiles</span>
                 </div>
 
                 <div className="flex gap-8 text-sm font-medium text-slate-500">
