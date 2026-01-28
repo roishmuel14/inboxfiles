@@ -60,17 +60,17 @@ export default function BlogPage() {
                                         </span>
                                         
                                         {/* Title */}
-                                        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-900 mb-4 leading-tight group-hover:text-google-blue transition-colors">
+                                        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4 leading-tight group-hover:text-google-blue transition-colors">
                                             {post.title}
                                         </h2>
                                         
                                         {/* Hook/Excerpt */}
-                                        <p className="text-slate-600 dark:text-slate-700 text-lg leading-relaxed mb-6 line-clamp-3">
+                                        <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-6 line-clamp-3">
                                             {post.hook}
                                         </p>
                                         
                                         {/* Meta Info */}
-                                        <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-600 mb-6">
+                                        <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400 mb-6">
                                             <span className="inline-flex items-center gap-1.5">
                                                 <HiCalendar className="w-4 h-4" />
                                                 {post.date}
